@@ -1,0 +1,39 @@
+###
+GET http://localhost:2000/api/tasks
+
+###
+GET http://localhost:2000/api/tasks?page=0&size=5&title=angular
+
+###
+POST http://localhost:2000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "tarea n",
+    "description": "trabajo freelance",
+    "done": true
+}
+
+###
+
+GET http://localhost:2000/api/tasks/608b13ae93b06bd5fe115e21
+
+###
+
+DELETE http://localhost:2000/api/tasks/608b13ae93b06bd5fe115e26
+
+###
+DELETE http://localhost:2000/api/tasks/608b2debe502dde32d24760f
+
+###
+
+GET http://localhost:2000/api/tasks/done
+
+###
+
+PUT http://localhost:2000/api/tasks/608b14f4812667d72ba4ccf9
+Content-Type: application/json
+
+{
+    "title": "Crear un sitio en Wix"
+}
